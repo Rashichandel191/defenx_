@@ -2,6 +2,11 @@ import joblib
 import numpy as np
 import pandas as pd
 import os
+from image_analysis import image_checker
+from url_analysis import url_checker
+from apk_analysis import apk_checker
+
+
 
 MODEL_PATH = os.path.join("models", "rf_model.pkl")
 model = joblib.load(MODEL_PATH)
