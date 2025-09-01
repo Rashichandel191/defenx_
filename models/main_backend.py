@@ -5,7 +5,8 @@ import os
 from image_analysis import image_checker
 from url_analysis import url_checker
 from apk_analysis import apk_checker
-from models import main_backend  
+
+
 
 MODEL_PATH = os.path.join("models", "rf_model.pkl")
 model = joblib.load(MODEL_PATH)
@@ -27,4 +28,3 @@ def check_apk(file):
         "prediction": "Fake APK" if pred == 1 else "Genuine APK",
         "confidence": round(proba*100, 2)
     }
-
