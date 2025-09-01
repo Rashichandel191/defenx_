@@ -4,7 +4,7 @@ import pandas as pd
 import time
 from model import load_or_train_model
 from utils import plot_confusion_matrix, plot_roc_curve, classification_report_df, plot_permission_bar
-
+from models import main_backend  
 st.set_page_config(
     page_title="DefenX",
     page_icon="🔒",
